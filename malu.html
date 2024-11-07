@@ -1,0 +1,153 @@
+<html>
+<head>
+    <style>
+        html{
+  background-color: #EA6A6E;
+}
+
+body{
+  background-color: #ad1335;
+  border-radius: 5px;
+}
+
+#logotipo{
+ width: 65px;
+ border-radius: 80px;
+}
+
+#pesquisa{
+  width: 60%;
+  height: 7%;
+  border-radius: 20px;
+  border: 1px;
+  position: absolute;
+  top: 25px;
+  right: 105px;
+  background-color: #F8E1F4;
+}
+
+button{
+  position: absolute;
+  left: 80%;
+  top: 25px;
+  border-radius: 70px;
+  border: 1px;
+  width: 70px;
+  height: 35px;
+  background-color: #F8E1F4;
+}
+
+h2{
+  font-family: Arial, sans-serif;
+  width: 80%;
+  color: #F1F7DC;
+}
+
+fieldset{
+  border-radius: 8px;
+  background-color: #e36475; 
+}
+img{
+  border-radius: 10px;
+}
+
+input{
+  border-radius: 5px;
+  border: 1px;
+  height: 30px;
+  width: 70%;
+}
+
+select{
+  border: 1px;
+  border-radius: 5px;
+  width: 70%;
+  height: 30px;
+  background-color: #FFFFFF;
+}
+
+textarea{
+  height: 30px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px;
+}
+ section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #F7E6CE;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            }
+     #b2{
+       background-color: #FF5693;
+       color: #F1F7DC;
+     }       
+
+
+    </style>
+</head>
+<div class="container">
+<img id="logotipo" src="https://img.freepik.com/vetores-premium/logotipo-floral-elegante-da-letra-m-de-luxo-dourado_807399-822.jpg">
+<input id="pesquisa" type="text" placeholder="Buscar..."> <button>
+🔎
+</button>
+</div>
+
+<body>
+<br>
+<fieldset>
+<center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0oHiW1jc4z-KtwA3_rP3Nt9nyjCAltdCp5A&s"></center>
+<header>
+<center> <h2>Deixe seu Feedback sobre nossos Produtos e Atendimentos</h2></center>
+    </header>
+<br>
+    <section>
+        <form action="/submit-feedback" method="POST">
+        
+           <p>
+           <label for="name">Seu Nome:</label></p>
+           <p>
+           
+          <p> <input type="text" id="name" name="name" required></p>
+</p>
+          <label for="email">Seu Email:</label>
+            <p><input type="email" id="email" name="email" required>
+</p>
+           <p> <label for="product">Produto Avaliado:</label></p>
+            
+            <p><input type="text" id="product" name="product" required></p>
+<p>
+<label for="rating">Avaliação do Produto:</label></p>
+           <p> <select id="rating" name="rating" required></p>
+               <p>
+               <option value="1">1 - Muito Ruim</option></p>
+               <p> <option value="2">2 - Ruim</option></p>
+               <p> <option value="3">3 - Regular</option></p>
+               <p> <option value="4">4 - Bom</option></p>
+              <p>  <option value="5">5 - Excelente</option></p>
+            </select>
+
+            <p><label for="feedbackType">Tipo de Feedback:</label></p>
+           <p> <select id="feedbackType" name="feedbackType" required>
+           </p> <option value="positivo">Positivo</option>
+<option value="negativo">Negativo</option>
+            </select>
+
+           <p> <label for="comments">Comentário Adicional:</label> </p>
+           <p> <textarea id="comments" name="comments" placeholder="Deixe seus comentários ou sugestões..." required></textarea> </p>
+
+           <p> <input type="submit" id='b2' value="Enviar"></p>
+        
+        <footer>
+        <p>&copy; 2024 Todos os direitos reservados</p>
+    </footer>
+
+        </form>
+    </section>
+
+</form>
+</fieldset>
+</body>
+</html>
